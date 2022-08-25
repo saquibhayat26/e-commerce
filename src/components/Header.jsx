@@ -12,7 +12,7 @@ function Header() {
     <Container>
       <Wrapper>
         <Left>
-          <Language>English</Language>
+          <Language>En</Language>
           <SearchContainer>
             <Input></Input>
             <Search style={{ color: "grey", fontSize: 18 }} />
@@ -25,7 +25,7 @@ function Header() {
           <MenuItems>REGISTER</MenuItems>
           <MenuItems>SIGN IN</MenuItems>
           <MenuItems>
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={0} color="primary">
               <ShoppingCartCheckoutOutlined />
             </Badge>
           </MenuItems>
@@ -38,15 +38,15 @@ function Header() {
 export default Header;
 
 const Container = styled.div`
-  height: 60px;
-  border: 1px solid black;
+  height: 52px;
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  margin-top: 4px;
 `;
 
 const Left = styled.div`
@@ -62,7 +62,7 @@ const SearchContainer = styled.div`
   padding: 4px;
   display: flex;
   align-items: center;
-  margin-left: 24px;
+  margin-left: 20px;
   cursor: pointer;
 `;
 
@@ -76,8 +76,11 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
-  font-weight: bold;
+  font-size: 32px;
   text-align: center;
+  @media (max-width: 540px) {
+    display: none;
+  }
 `;
 
 const Right = styled.div`

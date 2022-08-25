@@ -10,7 +10,7 @@ function Annoucement() {
 export default Annoucement;
 
 const Container = styled.div`
-  height: 30px;
+  height: 24px;
   background-color: #076b6b;
   color: white;
   display: flex;
