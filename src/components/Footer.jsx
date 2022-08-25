@@ -77,20 +77,7 @@ function Footer() {
           />
           contact@hayat.fashion
         </ContactContainer>
-        <PaymentContainer>
-          <PaymentIcons>
-            <PaymentIcon />
-          </PaymentIcons>
-          <PaymentIcons>
-            <PaymentIcon />
-          </PaymentIcons>
-          <PaymentIcons>
-            <PaymentIcon />
-          </PaymentIcons>
-          <PaymentIcons>
-            <PaymentIcon />
-          </PaymentIcons>
-        </PaymentContainer>
+        <PaymentContainer src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBhZvl1Hq3x13nyjerdXgYeds2rUh5riBesA&usqp=CAU" />
       </Right>
     </Container>
   );
@@ -163,18 +150,6 @@ const ContactContainer = styled.div`
   display: flex;
   margin-bottom: 18px;
 `;
-const PaymentContainer = styled.div`
-  display: flex;
-`;
-const PaymentIcons = styled.div`
-  height: 20px;
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0a0505;
-  color: white;
-  border-radius: 50%;
-  margin: 4px;
-  cursor: pointer;
+const PaymentContainer = styled.img`
+  width: 320px;
 `;
