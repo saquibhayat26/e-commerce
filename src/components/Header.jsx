@@ -19,7 +19,7 @@ function Header() {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>LOGO.</Logo>
+          <Logo>HAYAT FASHION</Logo>
         </Center>
         <Right>
           <MenuItems>REGISTER</MenuItems>
