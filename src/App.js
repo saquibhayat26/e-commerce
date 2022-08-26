@@ -2,9 +2,10 @@ import "./App.css";
 import Product from "./pages/Product";
 import Home from "./pages/Home";
 import ProductList from "./pages/ProductList";
+import Login from "./pages/Login";
 
 function App() {
-  return <Product />;
+  return <Login />;
 }
 
 export default App;
