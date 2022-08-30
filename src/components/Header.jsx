@@ -1,11 +1,9 @@
-import {
-  Search,
-  ShoppingBagOutlined,
-  ShoppingCartCheckoutOutlined,
-} from "@mui/icons-material";
+import { Search, ShoppingCartCheckoutOutlined } from "@mui/icons-material";
 import { Badge } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -19,16 +17,33 @@ function Header() {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>HAYAT FASHION</Logo>
+          <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+            <Logo>HAYAT FASHION</Logo>
+          </Link>
         </Center>
         <Right>
-          <MenuItems>REGISTER</MenuItems>
-          <MenuItems>SIGN IN</MenuItems>
-          <MenuItems>
-            <Badge badgeContent={0} color="primary">
-              <ShoppingCartCheckoutOutlined />
-            </Badge>
-          </MenuItems>
+          <Link
+            to="/register"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <MenuItems>REGISTER</MenuItems>
+          </Link>
+          <Link
+            to="/login"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <MenuItems>SIGN IN</MenuItems>
+          </Link>
+          <Link
+            to="/checkout"
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <MenuItems>
+              <Badge badgeContent={0} color="primary">
+                <ShoppingCartCheckoutOutlined />
+              </Badge>
+            </MenuItems>
+          </Link>
         </Right>
       </Wrapper>
     </Container>

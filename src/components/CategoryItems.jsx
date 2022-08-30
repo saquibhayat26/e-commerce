@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function CategoryItems({ items }) {
   return (
@@ -7,7 +8,13 @@ function CategoryItems({ items }) {
       <Image src={items.img} />
       <Info>
         <Title>{items.title}</Title>
-        <Button>SHOP NOW</Button>
+        <Link
+          to="/product"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
+          {" "}
+          <Button>SHOP NOW</Button>
+        </Link>
       </Info>
     </Container>
   );
