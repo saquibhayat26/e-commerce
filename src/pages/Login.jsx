@@ -62,6 +62,7 @@ const Input = styled.input`
   padding: 8px;
   flex: 1;
   min-width: 40%;
+  border: 1px solid lightgray;
 `;
 
 const Button = styled.button`
