@@ -24,6 +24,9 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Routes>
+        <Route path="/productlist" element={<ProductList />} />
+      </Routes>
+      <Routes>
         <Route path="/product" element={<Product />} />
       </Routes>
     </Router>

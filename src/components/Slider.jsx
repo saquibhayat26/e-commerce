@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import { hover } from "@testing-library/user-event/dist/hover";
+import { Link } from "react-router-dom";
 
 function Slider({ sliderItems }) {
   const [sliderIndex, setSliderIndex] = useState(0);
@@ -32,6 +32,7 @@ function Slider({ sliderItems }) {
           <InfoContainer>
             <Title>{sliderItems[sliderIndex].title}</Title>
             <Desc>{sliderItems[sliderIndex].desc}</Desc>
+
             <Button>EXPLORE</Button>
           </InfoContainer>
         </Slide>

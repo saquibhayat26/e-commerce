@@ -3,15 +3,23 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import AddIcon from "@mui/icons-material/Add";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Product({ product }) {
   return (
     <Container>
       <Image src={product.img} />
       <Info>
-        <Icon>
-          <SearchOutlinedIcon />
-        </Icon>
+        <Link
+          to="/product"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
+          {" "}
+          <Icon>
+            <SearchOutlinedIcon />
+          </Icon>
+        </Link>
+
         <Icon>
           <AddIcon />
         </Icon>

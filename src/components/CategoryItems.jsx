@@ -9,7 +9,7 @@ function CategoryItems({ items }) {
       <Info>
         <Title>{items.title}</Title>
         <Link
-          to="/product"
+          to="/productlist"
           style={{ color: "inherit", textDecoration: "none" }}
         >
           {" "}
